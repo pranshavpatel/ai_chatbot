@@ -35,7 +35,7 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "How's it going?"
+    let firstMessage = "How's it going? <br>Please type the number as per your question : <br>1. BYJU'S Classes program is available for which classes? <br>2. How can my child clear his/her doubts instantly during the online class? <br>3. What is a free trial class and how do I register for a trial class? <br>4. Are the trial classes free? <br>5. Will the teachers also help with school homework? <br><br>Press 6 to exit."
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -60,7 +60,7 @@ function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        userText = "Hello";
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
